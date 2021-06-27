@@ -11,16 +11,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Result"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textSize="30sp"/>
+            android:layout_gravity="center"/>
 
 
     </LinearLayout>
@@ -37,20 +35,22 @@
             android:layout_weight="1">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clear"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
-                android:text="C"
+                android:text="@string/txt1_1"
                 android:textSize="40sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
-                android:text="="
-                android:textSize="50sp" />
+                android:text="@string/txt2"
+                android:textSize="50sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -59,33 +59,37 @@
             android:layout_weight="1">
 
             <Button
+                android:id="@+id/btn7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="7"
+                android:text="@string/txt3"
                 android:textSize="30sp"/>
 
             <Button
+                android:id="@+id/btn8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="8"
+                android:text="@string/txt4"
                 android:textSize="30sp"/>
 
             <Button
+                android:id="@+id/btn9"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="9"
+                android:text="@string/txt5"
                 android:textSize="30sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:background="@drawable/but_border"
-                android:text="X"/>
+                android:text="@string/txt6" />
 
         </LinearLayout>
 
@@ -93,34 +97,39 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="4"
-                android:textSize="30sp"/>
 
             <Button
+                android:id="@+id/btn4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="5"
-                android:textSize="30sp"/>
+                android:text="@string/txt7"
+                android:textSize="30sp" />
 
             <Button
+                android:id="@+id/btn5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="6"
-                android:textSize="30sp"/>
+                android:text="@string/txt8"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/txt9"
+                android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="70sp"
                 android:background="@drawable/but_border"
-                android:text="-"/>
+                android:text="@string/txt10" />
 
         </LinearLayout>
 
@@ -130,33 +139,37 @@
             android:layout_weight="1">
 
             <Button
+                android:id="@+id/btn1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"
-                android:textSize="30sp"/>
+                android:text="@string/txt11"
+                android:textSize="30sp" />
 
             <Button
+                android:id="@+id/btn2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="2"
-                android:textSize="30sp"/>
+                android:text="@string/txt12"
+                android:textSize="30sp" />
 
             <Button
+                android:id="@+id/btn3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="3"
-                android:textSize="30sp"/>
+                android:text="@string/txt13"
+                android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/plus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:background="@drawable/but_border"
-                android:text="+" />
+                android:text="@string/txt14" />
 
         </LinearLayout>
 
@@ -166,35 +179,39 @@
             android:layout_weight="1">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/decimal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="80sp"
                 android:background="@drawable/but_border"
-                android:text="."/>
+                android:text="@string/txt15"/>
 
             <Button
+                android:id="@+id/btn0"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="0"
-                android:textSize="30sp"/>
+                android:text="@string/txt16"
+                android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pow"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="50sp"
-                android:text="^"
+                android:text="@string/txtxtx"
                 android:background="@drawable/but_border"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/division"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="50sp"
-                android:text="/"
-            android:background="@drawable/but_border"/>
+                android:text="@string/txt18"
+                android:background="@drawable/but_border" />
 
         </LinearLayout>
 

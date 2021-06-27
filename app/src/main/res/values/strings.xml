@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Calculate_1</string>
+    <string name="txt1">Result</string>
+    <string name="txt2">=</string>
+    <string name="txt3">7</string>
+    <string name="txt4">8</string>
+    <string name="txt5">9</string>
+    <string name="txt6">X</string>
+    <string name="txt7">4</string>
+    <string name="txt8">5</string>
+    <string name="txt9">6</string>
+    <string name="txt10">-</string>
+    <string name="txt11">1</string>
+    <string name="txt12">2</string>
+    <string name="txt13">3</string>
+    <string name="txt14">+</string>
+    <string name="txt15">.</string>
+    <string name="txt16">0</string>
+    <string name="txt17">^</string>
+    <string name="txt18">/</string>
+    <string name="txt1_1">C</string>
+    <string name="txt01">operat</string>
+    <string name="txtp">%</string>
+    <string name="txtxtx">^</string>
 </resources>
