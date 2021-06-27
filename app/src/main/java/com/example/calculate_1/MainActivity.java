@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnPlus, btnMinus, btnDivision, btnMultiply, btnDecimal, btnClear, btnEqual, btnPow;
     EditText editxtx1;
     float mValueOne, mValueTwo, mValuePow;
-    boolean crunchifyAddition, mSubtract, crunchifyMultiplication, crunchifyDivision, crunchifyPow;
+    boolean mAddition, mSubtract, mMultiplication, mDivision, mPow;
 
 
 
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     editxtx1.setText("");
                 } else {
                     mValueOne = Float.parseFloat(editxtx1.getText() + "");
-                    crunchifyAddition = true;
+                    mAddition = true;
                     editxtx1.setText(null);
                 }
             }
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(editxtx1.getText() + "");
-                crunchifyMultiplication = true;
+                mMultiplication = true;
                 editxtx1.setText(null);
             }
         });
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(editxtx1.getText() + "");
-                crunchifyDivision = true;
+                mDivision = true;
                 editxtx1.setText(null);
             }
         });
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(editxtx1.getText() + "");
-                crunchifyPow = true;
+                mPow = true;
                 editxtx1.setText(null);
             }
         });
@@ -170,9 +170,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(editxtx1.getText() + "");
 
-                if (crunchifyAddition == true) {
+                if (mAddition == true) {
                     editxtx1.setText(mValueOne + mValueTwo + "");
-                    crunchifyAddition = false;
+                    mAddition = false;
                 }
 
                 if (mSubtract == true) {
@@ -180,19 +180,19 @@ public class MainActivity extends AppCompatActivity {
                     mSubtract = false;
                 }
 
-                if (crunchifyMultiplication == true) {
+                if (mMultiplication == true) {
                     editxtx1.setText(mValueOne * mValueTwo + "");
-                    crunchifyMultiplication = false;
+                    mMultiplication = false;
                 }
 
-                if (crunchifyDivision == true) {
+                if (mDivision == true) {
                     editxtx1.setText(mValueOne / mValueTwo + "");
-                    crunchifyDivision = false;
+                    mDivision = false;
                 }
 
-                if (crunchifyPow == true) {
+                if (mPow == true) {
                     editxtx1.setText((int) Math.pow(mValueOne, mValueTwo));
-                    crunchifyPow = false;
+                    mPow = false;
                 }
             }
         });
