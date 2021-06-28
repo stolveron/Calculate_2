@@ -3,10 +3,13 @@ package com.example.calculate_1;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnPlus, btnMinus, btnDivision, btnMultiply, btnDecimal, btnClear, btnEqual, btnPow;
@@ -15,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
     boolean mAddition, mSubtract, mMultiplication, mDivision, mPow;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(convertCodeToStyle(getAppTheme()));
         setContentView(R.layout.activity_main);
+        initChanger();
 
         btn0 = findViewById(R.id.btn0);
         btn1 = findViewById(R.id.btn1);
@@ -212,5 +216,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private int convertCodeToStyle(int codeStyle) {
+        switch (codeStyle) {
+
+            case MaterialLight:
+                return R.style.AppThemeLight;
+            case MaterialLightDarkAction:
+                return R.style.AppTheme;
+            default:
+                return R.style.AppThemeDark;
+        }
+    }
+
+    private final int MyCoolStyle = 0;
+    private final int MaterialLight = 1;
+    private final int MaterialLightDarkAction = 2;
+    private final int MaterialDark = 3;
+    private final String KEY_PREF = "key";
+    private final String APP_THEME = "key";
+
+    private void initChanger() {
+        initButton(findViewById(R.id.radioButtonMaterialLightDarkAction), MaterialLightDarkAction);
+        initButton(findViewById(R.id.radioButtonMaterialDark), MaterialDark);
+
+    }
+
+    private void initButton(RadioButton button, int codeStyle) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setAppTheme(codeStyle);
+                recreate();
+            }
+        });
+
+    }
+
+    private void setAppTheme(int codeStyle) {
+        SharedPreferences sharedPreferences = getSharedPreferences(KEY_PREF, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(APP_THEME, codeStyle);
+        editor.apply();
+    }
+
+    private int getAppTheme() {
+        int codeStyle = MyCoolStyle;
+        SharedPreferences sharedPreferences = getSharedPreferences(KEY_PREF, MODE_PRIVATE);
+        return sharedPreferences.getInt(APP_THEME, codeStyle);
+    }
+
 
 }

@@ -12,22 +12,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_top"
+            style="@style/mTextViewStyle"/>
 
         <EditText
             android:id="@+id/edit1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialLightDarkAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:fontFamily="@font/guardianproitalic"
+            android:textSize="@dimen/raz1"
+            android:text="@string/theme_txt1" />
 
-    </LinearLayout>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/samson"
+            android:textSize="@dimen/raz2"
+            android:text="@string/teheme_txt2" />
+
+    </RadioGroup>
+
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/zero"
         android:orientation="vertical"
-        android:layout_weight="10">
+        android:layout_weight="35">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -221,7 +252,7 @@
                 android:backgroundTint="@color/reds"
                 app:strokeColor="@color/black"
                 app:strokeWidth="@dimen/dim50"
-                android:text="@string/txt15"/>
+                android:text="@string/txt15" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn0"

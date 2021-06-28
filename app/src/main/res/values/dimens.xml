@@ -60,4 +60,6 @@
     <dimen name="dim57">0dp</dimen>
     <dimen name="dim58">50sp</dimen>
     <dimen name="dim59">6dp</dimen>
+    <dimen name="raz1">30sp</dimen>
+    <dimen name="raz2">40sp</dimen>
 </resources>
