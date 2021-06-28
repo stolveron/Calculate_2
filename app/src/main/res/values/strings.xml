@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculate_1</string>
+    <string name="app_name">Calculate</string>
     <string name="txt1">Result</string>
     <string name="txt2">=</string>
     <string name="txt3">7</string>
