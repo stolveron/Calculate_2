@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(convertCodeToStyle(getAppTheme()));
         setContentView(R.layout.activity_main);
-        //initChanger();
+        /*initChanger();*/
 
         btn0 = findViewById(R.id.btn0);
         btn1 = findViewById(R.id.btn1);
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private int convertCodeToStyle(int codeStyle) {
+  private int convertCodeToStyle(int codeStyle) {
         switch (codeStyle) {
 
             case MaterialLight:
@@ -246,13 +246,13 @@ public class MainActivity extends AppCompatActivity {
     private final String KEY_PREF = "key";
     private final String APP_THEME = "key";
 
-    private void initChanger() {
+   /* private void initChanger() {
         initButton(findViewById(R.id.radioButtonMaterialLightDarkAction), MaterialLightDarkAction);
         initButton(findViewById(R.id.radioButtonMaterialDark), MaterialDark);
 
-    }
+    }*/
 
-    private void initButton(RadioButton button, int codeStyle) {
+   /* private void initButton(RadioButton button, int codeStyle) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -262,19 +262,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    private void setAppTheme(int codeStyle) {
+*/
+    /*private void setAppTheme(int codeStyle) {
         SharedPreferences sharedPreferences = getSharedPreferences(KEY_PREF, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt(APP_THEME, codeStyle);
         editor.apply();
-    }
+    }*/
 
     private int getAppTheme() {
         int codeStyle = MyCoolStyle;
         SharedPreferences sharedPreferences = getSharedPreferences(KEY_PREF, MODE_PRIVATE);
         return sharedPreferences.getInt(APP_THEME, codeStyle);
     }
-
 
 }
