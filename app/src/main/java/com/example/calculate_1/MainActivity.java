@@ -3,6 +3,7 @@ package com.example.calculate_1;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(convertCodeToStyle(getAppTheme()));
         setContentView(R.layout.activity_main);
-        initChanger();
+        //initChanger();
 
         btn0 = findViewById(R.id.btn0);
         btn1 = findViewById(R.id.btn1);
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btnEqual = findViewById(R.id.equal);
 
         btnClear = findViewById(R.id.clear);
-        btnPow = findViewById(R.id.pow);
+        btnPow = findViewById(R.id.pow); // кнопка для темы
         btnDecimal = findViewById(R.id.decimal);
 
         editxtx1 = (EditText) findViewById(R.id.edit1);
@@ -160,14 +161,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnPow.setOnClickListener(new View.OnClickListener() {
+        /*btnPow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(editxtx1.getText() + "");
                 mPow = true;
                 editxtx1.setText(null);
             }
-        });
+        });*/
+        View.OnClickListener goToSecondActivity = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        };
+
+        btnPow.setOnClickListener(goToSecondActivity);
 
         btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override

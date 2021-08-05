@@ -17,4 +17,6 @@
     <color name="colorPrimaryL">#e91e63</color>
     <color name="colorPrimaryDarkL">#b0003a</color>
     <color name="colorAccentL">#ff6090</color>
+
+    <color name="MidnightBlue">#191970</color>
 </resources>
