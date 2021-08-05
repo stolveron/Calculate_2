@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/kek"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -16,17 +15,17 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/mTextViewStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/txt_top"
-            style="@style/mTextViewStyle"/>
+            android:text="@string/txt_top" />
 
         <EditText
             android:id="@+id/edit1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
 
 
     </LinearLayout>
@@ -34,13 +33,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/zero"
-        android:orientation="vertical"
-        android:layout_weight="35">
+        android:layout_weight="40"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim1"
-            android:layout_weight="1">
+            android:layout_weight="3">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/clear"
@@ -48,11 +47,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blus"
-                app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim3"
                 android:text="@string/txt1_1"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dim4"
-                android:textColor="@color/black"/>
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/dim3" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/equal"
@@ -60,17 +59,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blus"
-                app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim6"
                 android:text="@string/txt2"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dim7"
-                android:textColor="@color/black"/>
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/dim6" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim8"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn7"
@@ -80,7 +80,7 @@
                 android:text="@string/txt3"
                 android:textSize="@dimen/dim10"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim11"/>
+                app:strokeWidth="@dimen/dim11" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn8"
@@ -88,9 +88,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt4"
+                android:textSize="@dimen/dim14"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim13"
-                android:textSize="@dimen/dim14"/>
+                app:strokeWidth="@dimen/dim13" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn9"
@@ -98,28 +98,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt5"
+                android:textSize="@dimen/dim17"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim15"
-                android:textSize="@dimen/dim17"/>
+                app:strokeWidth="@dimen/dim15" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/multiply"
                 android:layout_width="@dimen/dim18"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim19"
                 android:backgroundTint="@color/reds"
-                app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim20"
                 android:text="@string/txt6"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim19"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/dim20" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim21"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn4"
@@ -127,9 +127,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt7"
+                android:textSize="@dimen/dim24"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim23"
-                android:textSize="@dimen/dim24" />
+                app:strokeWidth="@dimen/dim23" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn5"
@@ -137,9 +137,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt8"
+                android:textSize="@dimen/dim27"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim26"
-                android:textSize="@dimen/dim27" />
+                app:strokeWidth="@dimen/dim26" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn6"
@@ -147,28 +147,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt9"
+                android:textSize="@dimen/dim30"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim29"
-                android:textSize="@dimen/dim30" />
+                app:strokeWidth="@dimen/dim29" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/minus"
                 android:layout_width="@dimen/dim31"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim32"
                 android:backgroundTint="@color/reds"
-                app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim33"
                 android:text="@string/txt10"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim32"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/dim33" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim34"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn1"
@@ -176,9 +176,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt11"
+                android:textSize="@dimen/dim37"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim36"
-                android:textSize="@dimen/dim37" />
+                app:strokeWidth="@dimen/dim36" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn2"
@@ -186,9 +186,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt12"
+                android:textSize="@dimen/dim40"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim39"
-                android:textSize="@dimen/dim40" />
+                app:strokeWidth="@dimen/dim39" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn3"
@@ -196,40 +196,40 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt13"
+                android:textSize="@dimen/dim43"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim42"
-                android:textSize="@dimen/dim43" />
+                app:strokeWidth="@dimen/dim42" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/plus"
                 android:layout_width="@dimen/dim44"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim45"
                 android:backgroundTint="@color/reds"
-                app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim46"
                 android:text="@string/txt14"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim45"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/dim46" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim47"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/decimal"
                 android:layout_width="@dimen/dim48"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim49"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/reds"
+                android:text="@string/txt15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim49"
                 app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim50"
-                android:text="@string/txt15" />
+                app:strokeWidth="@dimen/dim50" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn0"
@@ -237,33 +237,33 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/txt16"
+                android:textSize="@dimen/dim53"
                 app:strokeColor="@color/white"
-                app:strokeWidth="@dimen/dim52"
-                android:textSize="@dimen/dim53" />
+                app:strokeWidth="@dimen/dim52" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/pow"
                 android:layout_width="@dimen/dim54"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim55"
-                android:text="@string/txtxtx"
                 android:backgroundTint="@color/reds"
+                android:text="@string/txtxtx"
+                android:textColor="@color/MidnightBlue"
+                android:textSize="@dimen/dim55"
                 app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim56"
-                android:textColor="@color/MidnightBlue"/>
+                app:strokeWidth="@dimen/dim56" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/division"
                 android:layout_width="@dimen/dim57"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="@dimen/dim58"
-                android:text="@string/txt18"
                 android:backgroundTint="@color/reds"
+                android:text="@string/txt18"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim58"
                 app:strokeColor="@color/black"
-                app:strokeWidth="@dimen/dim59"
-                android:textColor="@color/black"/>
+                app:strokeWidth="@dimen/dim59" />
 
         </LinearLayout>
 

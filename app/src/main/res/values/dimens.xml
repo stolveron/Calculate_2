@@ -32,7 +32,7 @@
     <dimen name="dim29">2dp</dimen>
     <dimen name="dim30">30sp</dimen>
     <dimen name="dim31">0dp</dimen>
-    <dimen name="dim32">70sp</dimen>
+    <dimen name="dim32">30sp</dimen>
     <dimen name="dim33">6dp</dimen>
     <dimen name="dim34">0dp</dimen>
     <dimen name="dim35">0dp</dimen>
@@ -49,7 +49,7 @@
     <dimen name="dim46">6dp</dimen>
     <dimen name="dim47">0dp</dimen>
     <dimen name="dim48">0dp</dimen>
-    <dimen name="dim49">80sp</dimen>
+    <dimen name="dim49">35sp</dimen>
     <dimen name="dim50">6dp</dimen>
     <dimen name="dim51">0dp</dimen>
     <dimen name="dim52">2dp</dimen>
@@ -58,7 +58,7 @@
     <dimen name="dim55">16sp</dimen>
     <dimen name="dim56">6dp</dimen>
     <dimen name="dim57">0dp</dimen>
-    <dimen name="dim58">50sp</dimen>
+    <dimen name="dim58">30sp</dimen>
     <dimen name="dim59">6dp</dimen>
     <dimen name="raz1">30sp</dimen>
     <dimen name="raz2">40sp</dimen>
