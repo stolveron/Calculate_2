@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="5"
         android:orientation="vertical">
 
         <TextView
@@ -27,32 +27,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioButtonMaterialLightDarkAction"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/purple_200"
-            android:fontFamily="@font/guardianproitalic"
-            android:textSize="@dimen/raz1"
-            android:text="@string/theme_txt1" />
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioButtonMaterialDark"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/teal_700"
-            android:fontFamily="@font/samson"
-            android:textSize="@dimen/raz2"
-            android:text="@string/teheme_txt2" />
-
-    </RadioGroup>
-
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -274,7 +251,7 @@
                 android:backgroundTint="@color/reds"
                 app:strokeColor="@color/black"
                 app:strokeWidth="@dimen/dim56"
-                android:textColor="@color/black"/>
+                android:textColor="@color/MidnightBlue"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/division"
